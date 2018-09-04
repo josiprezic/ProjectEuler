@@ -6,7 +6,7 @@ public class Task1 {
     }
 
     private static void printSomething() {
-        System.out.println("Co tam Ewicika");
+        System.out.println("Co tam Ewicika!");
     }
 
 }
