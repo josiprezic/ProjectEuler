@@ -17,8 +17,9 @@ public class Task2 {
         long secondNumber = 2;
         long sum = 2;
         long temp;
+        long maxValue = 4000000;
 
-        while(firstNumber < 4000000 && secondNumber < 4000000) {
+        while(firstNumber < maxValue && secondNumber < maxValue) {
             temp = firstNumber + secondNumber;
             firstNumber = secondNumber;
             secondNumber = temp;
