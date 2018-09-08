@@ -25,6 +25,6 @@ public class Task2 {
             sum += (temp % 2 == 0) ? temp : 0;
         }
 
-        System.out.println("SUM: " + sum);
+        System.out.println("TASK 2: " + sum);
     }
 }

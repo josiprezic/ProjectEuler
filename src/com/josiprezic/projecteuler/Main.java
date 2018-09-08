@@ -3,10 +3,15 @@ package com.josiprezic.projecteuler;
 public class Main {
 
     public static void main(String[] args) {
-	    System.out.println("Choose a task from the Main class.");
+
+        System.out.println("****************************************");
+	    System.out.println("HINT: Choose a task from the Main class.");
+        System.out.println("****************************************");
+
         //Task1.run();
         //Task2.run();
         //Task3.run();
         //Task4.run();
+        //Task5.run();
     }
 }
