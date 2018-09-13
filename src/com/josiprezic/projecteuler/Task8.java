@@ -1,6 +1,6 @@
 package com.josiprezic.projecteuler;
 
-// TODO: NOT CORRECT!
+// TODO: NOT CORRECT!!!
 
 /*Largest product in a series
 Problem 8
