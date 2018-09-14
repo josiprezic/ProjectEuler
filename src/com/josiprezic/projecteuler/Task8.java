@@ -1,6 +1,7 @@
 package com.josiprezic.projecteuler;
 
-/*Largest product in a series
+/*
+Largest product in a series
 Problem 8
 The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
 
@@ -59,7 +60,7 @@ public class Task8 {
         long tempResult;
 
 
-        int maxArray[] = new int[13];
+        int maxArray[] = new int[numberOfDigits];
 
         for (int i = 0; i <= magicQube.length() - numberOfDigits; i++) {
             int numbers[] = new int [numberOfDigits];
@@ -72,7 +73,7 @@ public class Task8 {
             tempResult = getProduct(numbers);
             if (tempResult > maxResult) {
                 maxResult = tempResult;
-                for (int o = 0; o < 13; o++) {
+                for (int o = 0; o < numberOfDigits; o++) {
                     maxArray[o] = numbers[o];
                 }
             }
