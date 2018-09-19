@@ -22,5 +22,6 @@ public class Main {
         //Task9.run();
         //Task10.run();
         //Task11.run();
+        Task12.run();
     }
 }
