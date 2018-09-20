@@ -32,74 +32,19 @@ public class Task12 {
         long currentTriangleNumber = 0;
         long counter = 0;
 
-        //////////////////////
-        int divisorsMax = 0;
-        //////////////////////
-
-
-
         while(currentNumberOfDivisors < requiredNumberOfDivisors) {
-            currentNumberOfDivisors = 0;
             counter++;
             currentTriangleNumber += counter;
-
-
-            /*for (int i = 1; i <= counter; i++) {
-                currentTriangleNumber += i;
-            }*/
-
-            System.out.println("Current truangle number: " + currentTriangleNumber);
-            /*for (int i = currentTriangleNumber; i > 0; i--) {
-                if (currentTriangleNumber % i == 0) {
-                    currentNumberOfDivisors++;
-                }
-            }*/
 
             currentNumberOfDivisors = getNumberOfDivisors(currentTriangleNumber);
 
             if (currentNumberOfDivisors > requiredNumberOfDivisors) {
-                System.out.println("TASK 12: " + currentNumberOfDivisors);
                 System.out.println("TASK 12: " + currentTriangleNumber);
                 return;
             }
 
-            if (currentNumberOfDivisors > divisorsMax) {
-                divisorsMax = currentNumberOfDivisors;
-                //System.out.println("MAX number of divisors = " + divisorsMax);
-            }
-
-
-            ///////////////////////
-            System.out.println("MAX number of divisors = " + divisorsMax);
-            ///////////////////////
         }
     }
-
-    /*private static int getNumberOfDivisors(long n) {
-        if (n % 2 == 0) {
-            n = n/2;
-        }
-
-        int divisors = 1;
-        int count = 1;
-        while (n % 2 == 0) {
-            count++;
-            n /= 2;
-        }
-        divisors = divisors * (count + 1);
-        int p = 3;
-
-        while (n != 1) {
-            count = 0;
-            while (n % p == 0) {
-                count++;
-                n = n/p;
-            }
-            divisors = divisors * (count + 1);
-            p += 2;
-        }
-        return divisors;
-    }*/
 
     private static int getNumberOfDivisors(long n)
     {
@@ -108,11 +53,7 @@ public class Task12 {
         {
             if (n%i==0)
             {
-                if (n/i == i)
-                    numberOfDivisors++;
-
-                else
-                    numberOfDivisors += 2;
+                numberOfDivisors = (n/i == i) ? numberOfDivisors + 1 : numberOfDivisors + 2;
             }
         }
         return numberOfDivisors;
